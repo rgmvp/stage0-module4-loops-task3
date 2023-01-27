@@ -2,15 +2,17 @@ package school.mjc.stage0.loops.task3;
 
 public class GreatestCommonDivisor {
     public void printGCD(int first, int second) {
-        while (first != second){
-            if (first > second){
-                first -= second;
+        int a = first;
+        int b = second;
+        while (a != b){
+            if (a > b){
+                a -= b;
             }
             else {
-                second -= first;
+                b -= a;
             }
 
         }
-        System.out.println(first);
+        System.out.println(a);
     }
 }
