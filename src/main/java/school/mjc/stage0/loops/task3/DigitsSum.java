@@ -8,7 +8,7 @@ public class DigitsSum {
             sum += (t % 10);
             t /= 10;
         }
-        System.out.println(sum);
+        System.out.println(Math.abs(sum));
 
     }
 }
