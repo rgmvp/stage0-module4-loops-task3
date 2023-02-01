@@ -2,12 +2,19 @@ package school.mjc.stage0.loops.task3;
 
 public class NinesSum {
     public void calculateSum(int lengthOfLastNumber) {
+
         int c = lengthOfLastNumber;
-        int a = 9;
-        int b = 11;
-        for (int i = 0; i < c; i++){
-            a += 9 * b;
-            b *= 10 + 1;
+        int a = 0;
+        int b = 9;
+        int d = 9;
+        for (int i = 0; i < c ; i++){
+            if (lengthOfLastNumber == 1){
+                a = 9;
+                break;
+            }
+            a += d;
+            d = d * 10 + 9;
+
 
 
         }

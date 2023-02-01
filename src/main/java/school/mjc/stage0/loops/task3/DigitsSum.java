@@ -6,7 +6,7 @@ public class DigitsSum {
         while(t != 0){
 
             sum += (t % 10);
-            t/=10;
+            t /= 10;
         }
         System.out.println(sum);
 
